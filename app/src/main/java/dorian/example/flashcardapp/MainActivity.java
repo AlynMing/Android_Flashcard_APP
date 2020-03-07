@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 100) { // this 100 needs to match the 100 we used when we called startActivityForResult!
+        if (requestCode == 100 && resultCode==RESULT_OK){ // this 100 needs to match the 100 we used when we called startActivityForResult!
             String new_question = data.getExtras().getString("question"); // 'string1' needs to match the key we used when we put the string in the Intent
             String new_answer = data.getExtras().getString("answer");
             ((TextView)findViewById(R.id.flashcard_question)).setText(new_question);
