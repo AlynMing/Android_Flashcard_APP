@@ -9,7 +9,11 @@ question for the answer to appear.
 `TODO://`I designed the app's background within Android Studio by referencing an image's address. I modified the question text and text
 color of my choice for display purposes. Using an onClickListener(), I programmed the app to no longer be a static screen, but to
 generate the answer to the question to appear once the question has been clicked. To do this, I made the question visible until
-clicked and once the question has been clicked, the question would become invisible and the answer would become visible.
+clicked and once the question has been clicked, the question would become invisible and the answer would become visible. To enahnce this
+app, I added a toggle button for the user to click to reveal the multiple choices options if needed. 
+I added multiple choice questions as an optional task where the user will no longer have to click the question, but can simply pick 
+one of the multiple choice answers. If the user's pick is wrong, then the user's choice will turn red and the correct answer will turn
+green.
 
 <img src="https://imgur.com/EfakrMg.gif" width=200><br>
 ## Required
