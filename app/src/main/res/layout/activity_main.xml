@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/flashcard_question"
         android:layout_width="match_parent"
-        android:background="#000000"
+        android:background="@drawable/card_background"
         android:layout_height="200dp"
         android:text="What school do I attend?"
         android:textColor="#008000"
@@ -21,12 +21,23 @@
     <TextView
         android:id="@+id/answer"
         android:layout_width="match_parent"
-        android:background="#000000"
+        android:background="@drawable/card_background"
         android:layout_height="200dp"
         android:text="Michigan State "
         android:textColor="#008000"
         android:textAlignment="center"
         android:textSize="40sp"
         android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:scrollbarDefaultDelayBeforeFade="400"
+        app:srcCompat="@drawable/icon" />
+
 
 </RelativeLayout>
