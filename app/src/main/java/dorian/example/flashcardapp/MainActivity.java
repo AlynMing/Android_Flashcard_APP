@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -27,8 +28,36 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.imageButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(MainActivity.this,AddCardActivity.class);
-                startActivityForResult(intent,100);
+                Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
+                startActivityForResult(intent, 100);
+            }
+        });
+        findViewById(R.id.eye_toggle).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.answer_choice1).setVisibility(View.VISIBLE);
+                findViewById(R.id.answer_choice2).setVisibility(View.VISIBLE);
+                findViewById(R.id.answer_choice3).setVisibility(View.VISIBLE);
+            }
+        });
+        findViewById(R.id.answer_choice1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.answer_choice1).setBackgroundColor(getResources().getColor(R.color.my_red_color));
+                findViewById(R.id.answer_choice3).setBackgroundColor(getResources().getColor(R.color.my_green_color));
+            }
+        });
+        findViewById(R.id.answer_choice2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.answer_choice2).setBackgroundColor(getResources().getColor(R.color.my_red_color));
+                findViewById(R.id.answer_choice3).setBackgroundColor(getResources().getColor(R.color.my_green_color));
+            }
+        });
+        findViewById(R.id.answer_choice3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.answer_choice3).setBackgroundColor(getResources().getColor(R.color.my_green_color));
             }
         });
     }

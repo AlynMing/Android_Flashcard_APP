@@ -29,6 +29,50 @@
         android:textSize="40sp"
         android:visibility="invisible"/>
 
+    <TextView
+        android:id="@+id/answer_choice1"
+        android:background="#87ceeb"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/flashcard_question"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:text="UofM"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:id="@+id/answer_choice2"
+        android:background="#87ceeb"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/answer_choice1"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:text="Ohio State"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/answer_choice3"
+        android:background="#87ceeb"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/answer_choice2"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:text="Michigan State"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="invisible"/>
+
+
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="100dp"
@@ -38,6 +82,15 @@
         android:layout_centerInParent="true"
         android:scrollbarDefaultDelayBeforeFade="400"
         app:srcCompat="@drawable/icon" />
+
+    <ImageView
+        android:id="@+id/eye_toggle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:scrollbarDefaultDelayBeforeFade="400"
+        android:src="@drawable/ic_eye_toggle" />
 
 
 </RelativeLayout>
