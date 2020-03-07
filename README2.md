@@ -6,7 +6,7 @@ using onclicklisterners to alternate between activities. This lab also involves 
 app and chnage the text on the card. 
 
 ### App Walk-though
-<img src="https://imgur.com/mEL5M7e" width=200><br>
+<img src="https://imgur.com/mEL5M7e.gif" width=200><br>
 
 ## Required
 - [x] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
