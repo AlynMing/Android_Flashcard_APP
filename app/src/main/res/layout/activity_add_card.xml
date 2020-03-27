@@ -30,6 +30,39 @@
         android:layout_centerHorizontal="true"
         android:hint="Answer" />
 
+    <EditText
+        android:id="@+id/editText_Answer_choice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/editText_Answer"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter wrong answer" />
+
+    <EditText
+        android:id="@+id/editText_Answer_choice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/editText_Answer_choice1"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter wrong answer" />
+
+    <EditText
+        android:id="@+id/editText_Answer_choice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@id/editText_Answer_choice2"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter correct answer" />
+
     <ImageButton
         android:id="@+id/imageButton_Cancel"
         android:layout_width="wrap_content"

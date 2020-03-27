@@ -101,6 +101,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                findViewById(R.id.answer_choice1).setVisibility(View.INVISIBLE);
+                findViewById(R.id.answer_choice2).setVisibility(View.INVISIBLE);
+                findViewById(R.id.answer_choice3).setVisibility(View.INVISIBLE);
+
                 final Animation leftOutAnim = AnimationUtils.loadAnimation(v.getContext(), R.anim.left_in);
                 final Animation rightInAnim = AnimationUtils.loadAnimation(v.getContext(), R.anim.right_in);
                 findViewById(R.id.flashcard_question).startAnimation(leftOutAnim);
@@ -155,8 +159,14 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 100 && resultCode==RESULT_OK){ // this 100 needs to match the 100 we used when we called startActivityForResult!
             String new_question = data.getExtras().getString("question"); // 'string1' needs to match the key we used when we put the string in the Intent
             String new_answer = data.getExtras().getString("answer");
+            String new_answer_choice1 = data.getExtras().getString("answer choice 1");
+            String new_answer_choice2 = data.getExtras().getString("answer choice 2");
+            String new_answer_choice3 = data.getExtras().getString("answer choice 3");
             ((TextView)findViewById(R.id.flashcard_question)).setText(new_question);
             ((TextView)findViewById(R.id.answer)).setText(new_answer);
+            ((TextView)findViewById(R.id.answer_choice1)).setText(new_answer_choice1);
+            ((TextView)findViewById(R.id.answer_choice2)).setText(new_answer_choice2);
+            ((TextView)findViewById(R.id.answer_choice3)).setText(new_answer_choice3);
             flashcardDatabase.insertCard(new Flashcard(new_question, new_answer));
             allFlashcards = flashcardDatabase.getAllCards();
         }
